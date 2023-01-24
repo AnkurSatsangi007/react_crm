@@ -32,6 +32,10 @@ import UploadNeatedTask from "../pages/TaskAssign/UploadNestedTask";
 import NintySeriesList from "../pages/TaskAssign/NintySeriesList";
 import NintySeriesSerach from "../pages/TaskAssign/NintySeriesSearch";
 import SurrenderList from "../pages/TaskAssign/SurrenderList";
+import PaymentStatus from "../pages/Account/PaymentStatus";
+import LedgerPayment from "../pages/Account/LedgerPayment";
+import DownloadInvoice from "../pages/Account/DownloadInvoice";
+import SurrenderClientList from "../pages/Account/SurrenderClientList";
 // import SurrenderList from "../pages/TaskAssign/SurrenderList";
 const Routing = () => {
   return (
@@ -101,10 +105,10 @@ const Routing = () => {
           <Route path="/DashBoard/AddDscMeetingRecord" element={""} />
           <Route path="/DashBoard/DscMeetingRecord" element={""} />
           {/* Accounts */}
-          <Route path="/DashBoard/PaymentStatus" element={""} />
-          <Route path="/DashBoard/LedgerPayment" element={""} />
-          <Route path="/DashBoard/DownloadInvoice" element={""} />
-          <Route path="/DashBoard/SurrenderClientList" element={""} />
+          <Route path="/DashBoard/PaymentStatus" element={<PaymentStatus/>} />
+          <Route path="/DashBoard/LedgerPayment" element={<LedgerPayment/>} />
+          <Route path="/DashBoard/DownloadInvoice" element={<DownloadInvoice/>} />
+          <Route path="/DashBoard/SurrenderClientList" element={<SurrenderClientList/>} />
           {/* Documentation */}
           <Route path="/DashBoard/AllClosureList" element={""} />
           <Route path="/DashBoard/PanClosureList" element={""} />
